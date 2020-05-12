@@ -1,6 +1,6 @@
 
 exports.up = function(knex) {
-  return knex.schema.table('cars', tbl => {
+  return knex.schema.createTable('cars', tbl => {
     tbl.increments()
 
     // VIN
